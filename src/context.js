@@ -15,7 +15,7 @@ class RoomProvider extends Component {
     this.setState({
       rooms,
       featuredRooms,
-      loading: true,
+      loading: false,
       sortedRooms: rooms,
     });
   }
