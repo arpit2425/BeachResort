@@ -12,10 +12,10 @@ function RoomContainer() {
           return <Loading />;
         }
         return (
-          <div>
-            <RoomsFilter />
-            <RoomsList />
-          </div>
+          <>
+            <RoomsFilter rooms={rooms} />
+            <RoomsList rooms={sortedRooms} />
+          </>
         );
       }}
     </RoomConsumer>
